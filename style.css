@@ -5,6 +5,20 @@
     font-family: sans-serif;
 }
 
+:root {
+    --LARGE-H1-FONT-SIZE: 3rem;
+    --MEDIUM-H1-FONT-SIZE: 2rem;
+    --SMALL-H1-FONT-SIZE: 1.5rem;
+    --LITTLE-H1-FONT-SIZE: 1.1rem;
+    --LARGE-P-FONT-SIZE: 1.5rem;
+    --MEDIUM-P-FONT-SIZE: 0.9rem;
+    --SMALL-P-FONT-SIZE: 0.8rem;
+    --LARGE-SPACING: 2rem;
+    --MEDIUM-SPACING: 1.5rem;
+    --SMALL-SPACING: 1rem;
+    --LITTLE-SPACING: 0.8rem;
+}
+
 body {
     height: 100vh;
     background: rgb(24, 20, 20);
@@ -25,7 +39,7 @@ header {
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: var(--SMALL-H1-FONT-SIZE);
     color: rgba(255, 255, 255, 0.671);
 }
 
@@ -37,9 +51,9 @@ nav ul {
 nav ul li,a {
     list-style: none;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: var(--MEDIUM-P-FONT-SIZE);
     color: rgba(255, 255, 255, 0.671);
-    padding-left: 0.8rem;
+    padding-left: var(--LITTLE-SPACING);
 }
 
 .cover-img {
@@ -56,7 +70,7 @@ nav ul li,a {
 .cover-img-texts {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--SMALL-SPACING);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -66,28 +80,33 @@ nav ul li,a {
 
 .cover-img-texts h1 {
     font-weight: 900;
-    font-size: 3rem;
+    font-size: var(--LARGE-H1-FONT-SIZE);
 }
 
 .cover-img-texts p {
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    font-size: var(--LARGE-P-FONT-SIZE);
+    line-height: var(--MEDIUM-SPACING);
 }
 
 article {
     width: 90%;
     margin: auto;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 .services-texts {
     text-align: center;
     color: #fff;
+    padding: var(--LARGE-SPACING);
 }
 
 .services-texts h1 {
     font-weight: 700;
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: var(--MEDIUM-H1-FONT-SIZE);
+    padding: var(--SMALL-SPACING);
+}
+
+.services-texts p {
+    line-height: var(--MEDIUM-SPACING);
 }
 
 .services {
@@ -95,15 +114,15 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: var(--LARGE-SPACING);
+    margin-top: var(--LARGE-SPACING);
 }
 
 .info-cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: var(--LARGE-SPACING);
 }
 
 .info-card {
@@ -111,7 +130,7 @@ article {
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--SMALL-SPACING);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -119,60 +138,66 @@ article {
 }
 
 .info-card h2 {
-    font-size: 1.2rem;
+    font-size: var(--LITTLE-H1-FONT-SIZE);
 }
 
 .info-card p {
-    font-size: 0.8rem;
-    line-height: 1.4rem;
+    font-size: var(--MEDIUM-P-FONT-SIZE);
+    line-height: var(--MEDIUM-SPACING);
 }
 .info-card button {
     background: none;
     border: 1px solid rgb(230, 149, 0);
-    padding: 1rem;
+    padding: var(--SMALL-SPACING);
     color: rgb(230, 149, 0);
-    border-radius: 2rem;
+    border-radius: var(--MEDIUM-SPACING);
 }
 
 .about-texts {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     color: #fff;
     gap: 4rem;
+    padding-top: 4rem;
 }
 
 .about-texts-1, .about-texts-2 {
     flex: calc(100% / 2);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--SMALL-SPACING);
     height: auto;
     justify-content: center;
     align-items: left;
 }
 
-.about-texts-1 {
-    padding: 1.5rem;
+.about-texts-1, .about-texts-2 {
+    padding: var(--MEDIUM-SPACING);
 }
 
 .about-texts-1 p, .about-texts-2 p {
-    line-height: 1.4rem;
+    line-height: var(--MEDIUM-SPACING);
 }
 
 .about-texts-2 {
     background-color: rgb(230, 149, 0);
-    padding: 1.7rem;
+    padding-top: 5rem;
+}
+
+.about-texts-2 h3 {
+    font-size: var(--LITTLE-H1-FONT-SIZE)
 }
 
 .about-texts-2 ol {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--SMALL-SPACING);
 }
 
 .image-gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -203,7 +228,7 @@ article {
 .final-info h1 {
     color: #fff;
     font-weight: 900;
-    font-size: 2.3rem;
+    font-size: var(--LARGE-H1-FONT-SIZE);
 }
 
 .final-info p {
@@ -211,7 +236,7 @@ article {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    font-size: 2rem;
+    font-size: var(--LARGE-P-FONT-SIZE);
     font-style: italic;
 }
 footer {
@@ -219,15 +244,15 @@ footer {
     width: 100%;
     height: 50px;
     color: #fff;
-    padding: 1rem;
+    padding: var(--SMALL-SPACING);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: var(--LARGE-SPACING);
 }
 
 footer p, footer p a {
-    font-size: 0.9rem;
+    font-size: var(--SMALL-P-FONT-SIZE);
 }
 
 footer p a {
@@ -250,11 +275,11 @@ footer p a {
     }
 
     .cover-img-texts h1, .services-texts h1 {
-        font-size: 1.5rem;
+        font-size: var(--SMALL-H1-FONT-SIZE);
     }
 
     .cover-img-texts p, .services-texts p, .about-texts-1 p, .about-texts-2 p, .info-card p, .final-info p {
-        font-size: 0.9rem;
+        font-size: var(--SMALL-P-FONT-SIZE);
     }
 
     .info-cards {
@@ -264,11 +289,11 @@ footer p a {
     .info-card {
         flex: 100%;
         width: 100%;
-        padding: 1rem;
+        padding: var(--SMALL-SPACING);
     }
 
     .info-card button {
-        padding: 0.7rem;
+        padding: var(--LITTLE-SPACING);
     }
 
     .about-texts {
@@ -288,7 +313,7 @@ footer p a {
     .final-info {
         flex-direction: column;
         align-items: flex-start;
-        gap: 1rem;
+        gap: var(--SMALL-SPACING);
 
     }
 
@@ -297,35 +322,46 @@ footer p a {
     }
 
     .final-info h1 {
-        font-size: 1.4rem;
+        font-size: var(--SMALL-H1-FONT-SIZE);
+    }
+
+    .final-info p {
+        font-size: var(--LARGE-P-FONT-SIZE);
     }
 
     footer p, footer p a {
-        font-size: 0.8rem;
+        font-size: var(--SMALL-P-FONT-SIZE);
     }
 }
 
 @media screen and (min-width: 500px){
-    .cover-img-texts h1, .services-texts h1, .about-texts-1 h1, .final-info h1 {
-        font-size: 2rem;
+
+    .cover-img-texts h1, .services-texts h1 {
+        font-size: var(--MEDIUM-H1-FONT-SIZE);
+    }
+    .about-texts-1 h1, .final-info h1 {
+        font-size: var(--MEDIUM-H1-FONT-SIZE);
     }
 
     .cover-img-texts p, .services-texts p, .info-card p, .about-texts-1 p, .about-texts-2 p {
-        font-size: 1.1rem;
+        font-size: var(--MEDIUM-P-FONT-SIZE);
     }
 
-    .info-card h2, .about-texts-2 h3, .final-info p {
-        font-size: 1.5rem;
+    .final-info p {
+        font-size: var(--LARGE-P-FONT-SIZE);
+    }
+    .info-card h2 {
+        font-size: var(--SMALL-H1-FONT-SIZE);
     }
 
     footer p, footer p a {
-        font-size: 1.1rem;
+        font-size: var(--SMALL-P-FONT-SIZE);
     }
 }
 
 @media screen and (min-width: 768px){
-    .cover-img-texts h1 {
-        font-size: 3rem;
+    .cover-img-texts h1, .final-info h1 {
+        font-size: var(--LARGE-H1-FONT-SIZE);
     }
     .info-cards {
         flex-direction: row;
@@ -333,15 +369,11 @@ footer p a {
     }
 
     .info-card button {
-        padding: 1rem;
+        padding: var(--SMALL-SPACING);
     }
     .column {
         flex: calc(100%/3);
         max-width: calc(100%/3);
-    }
-
-    .final-info h1 {
-        font-size: 3rem;
     }
 }
 
@@ -352,7 +384,7 @@ footer p a {
 
     header {
         justify-content: space-between;
-        padding: 1rem;
+        padding: var(--SMALL-SPACING);
     }
 
     .about-texts {
@@ -360,7 +392,7 @@ footer p a {
     }
 
     .final-info p {
-        font-size: 2rem;
+        font-size: var(--LARGE-P-FONT-SIZE);
     }
 
     .final-info {
