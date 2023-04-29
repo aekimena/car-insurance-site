@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: rgb(24, 20, 20);
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    height: 50px;
+    background-color: rgb(24, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li,a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.671);
+    padding-left: 0.8rem;
+}
+
+.cover-img {
+    background: linear-gradient(rgba(24, 20, 20, 0.349), rgba(24, 20, 20, 0.349)), url("img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    place-content: center;
+}
+
+.cover-img-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.cover-img-texts h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.cover-img-texts p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+article {
+    width: 90%;
+    margin: auto;
+    margin-top: 2.5rem;
+}
+.services-texts {
+    text-align: center;
+    color: #fff;
+}
+
+.services-texts h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info-card {
+    flex: calc(100% / 3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.info-card h2 {
+    font-size: 1.2rem;
+}
+
+.info-card p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+.info-card button {
+    background: none;
+    border: 1px solid rgb(230, 149, 0);
+    padding: 1rem;
+    color: rgb(230, 149, 0);
+    border-radius: 2rem;
+}
+
+.about-texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 4rem;
+}
+
+.about-texts-1, .about-texts-2 {
+    flex: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    justify-content: center;
+    align-items: left;
+}
+
+.about-texts-1 {
+    padding: 1.5rem;
+}
+
+.about-texts-1 p, .about-texts-2 p {
+    line-height: 1.4rem;
+}
+
+.about-texts-2 {
+    background-color: rgb(230, 149, 0);
+    padding: 1.7rem;
+}
+
+.about-texts-2 ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex: calc(100% / 3);
+    max-width: calc(100% / 3);
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.final-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
+.final-info h1, .final-info p {
+    flex: calc(100% / 2);
+    padding: 1rem;
+    height: auto;
+}
+
+.final-info h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.3rem;
+}
+
+.final-info p {
+    color: rgb(204, 133, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-style: italic;
+}
+footer {
+    background-color: rgb(19, 17, 17);
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+footer p, footer p a {
+    font-size: 0.9rem;
+}
+
+footer p a {
+    text-decoration: underline;
+    color: #fff;
+    font-family: inherit;
+}
+
+@media screen and (min-width: 200px){
+
+    body {
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .cover-img-texts h1, .services-texts h1 {
+        font-size: 1.5rem;
+    }
+
+    .cover-img-texts p, .services-texts p, .about-texts-1 p, .about-texts-2 p, .info-card p, .final-info p {
+        font-size: 0.9rem;
+    }
+
+    .info-cards {
+        flex-direction: column;
+    }
+
+    .info-card {
+        flex: 100%;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .info-card button {
+        padding: 0.7rem;
+    }
+
+    .about-texts {
+        flex-direction: column;
+    }
+
+    .about-texts-1, .about-texts-2 {
+        flex: 100%;
+        width: 100%;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .final-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+    }
+
+    .final-info h1, .final-info p {
+        width: 100%;
+    }
+
+    .final-info h1 {
+        font-size: 1.4rem;
+    }
+
+    footer p, footer p a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .cover-img-texts h1, .services-texts h1, .about-texts-1 h1, .final-info h1 {
+        font-size: 2rem;
+    }
+
+    .cover-img-texts p, .services-texts p, .info-card p, .about-texts-1 p, .about-texts-2 p {
+        font-size: 1.1rem;
+    }
+
+    .info-card h2, .about-texts-2 h3, .final-info p {
+        font-size: 1.5rem;
+    }
+
+    footer p, footer p a {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .cover-img-texts h1 {
+        font-size: 3rem;
+    }
+    .info-cards {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .info-card button {
+        padding: 1rem;
+    }
+    .column {
+        flex: calc(100%/3);
+        max-width: calc(100%/3);
+    }
+
+    .final-info h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    nav {
+        display: block;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .about-texts {
+        flex-direction: row;
+    }
+
+    .final-info p {
+        font-size: 2rem;
+    }
+
+    .final-info {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 90%;
+    }
+
+    header {
+        padding: 0;
+    }
+}
