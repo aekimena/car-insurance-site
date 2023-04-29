@@ -43,7 +43,7 @@ nav ul li,a {
 }
 
 .cover-img {
-    background: linear-gradient(rgba(24, 20, 20, 0.349), rgba(24, 20, 20, 0.349)), url("img1.jpg");
+    background: linear-gradient(rgba(24, 20, 20, 0.349), rgba(24, 20, 20, 0.349)), url("images/img1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
